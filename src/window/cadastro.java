@@ -81,7 +81,7 @@ public class cadastro extends javax.swing.JFrame {
 
         jLabel4.setText("senha");
 
-        jButton3.setText("SEE");
+        jButton3.setText("Exibir");
 
         jCheckBox1.setText("Funcionário");
 
@@ -107,7 +107,7 @@ public class cadastro extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton3)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
