@@ -28,17 +28,17 @@ public class principal extends javax.swing.JFrame {
 
         jMenuItem1 = new javax.swing.JMenuItem();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        TableAlugueis = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        mbEstoque = new javax.swing.JMenu();
+        mbAgenda = new javax.swing.JMenu();
+        mbAlugueis = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        TableAlugueis.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -49,16 +49,16 @@ public class principal extends javax.swing.JFrame {
                 "Dia", "Cliente"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(TableAlugueis);
 
-        jMenu1.setText("ESTOQUE");
-        jMenuBar1.add(jMenu1);
+        mbEstoque.setText("ESTOQUE");
+        jMenuBar1.add(mbEstoque);
 
-        jMenu2.setText("AGENDA");
-        jMenuBar1.add(jMenu2);
+        mbAgenda.setText("AGENDA");
+        jMenuBar1.add(mbAgenda);
 
-        jMenu3.setText("ALUGUEIS");
-        jMenuBar1.add(jMenu3);
+        mbAlugueis.setText("ALUGUEIS");
+        jMenuBar1.add(mbAlugueis);
 
         setJMenuBar(jMenuBar1);
 
@@ -118,12 +118,12 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
+    private javax.swing.JTable TableAlugueis;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JMenu mbAgenda;
+    private javax.swing.JMenu mbAlugueis;
+    private javax.swing.JMenu mbEstoque;
     // End of variables declaration//GEN-END:variables
 }
