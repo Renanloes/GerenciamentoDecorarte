@@ -40,13 +40,13 @@ public class principal extends javax.swing.JFrame {
 
         TableAlugueis.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Dia", "Cliente"
+                "Dia/Saída", "Dia/Retorno", "Cliente"
             }
         ));
         jScrollPane1.setViewportView(TableAlugueis);
