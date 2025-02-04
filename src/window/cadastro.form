@@ -27,12 +27,12 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="pfCadsSenha" max="32767" attributes="0"/>
+                  <Component id="CadsSenha" max="32767" attributes="0"/>
                   <Component id="jLabel4" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
-                  <Component id="tfCadEmail" alignment="0" pref="184" max="32767" attributes="0"/>
+                  <Component id="CadEmail" alignment="0" pref="184" max="32767" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="141" max="-2" attributes="0"/>
-                  <Component id="tfCadUser" max="32767" attributes="0"/>
+                  <Component id="CadUser" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="buttonExibirCad" min="-2" max="-2" attributes="0"/>
@@ -41,7 +41,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="cbFuncionario" min="-2" max="-2" attributes="0"/>
+                  <Component id="boxFuncionario" min="-2" max="-2" attributes="0"/>
                   <Component id="ButtonVoltarCad" min="-2" pref="108" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -52,7 +52,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="cbSuperior" min="-2" max="-2" attributes="0"/>
+                      <Component id="boxSuperior" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="76" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -66,22 +66,22 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" pref="27" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="tfCadUser" min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="CadUser" min="-2" pref="30" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" pref="27" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="tfCadEmail" min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="CadEmail" min="-2" pref="30" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" pref="27" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="pfCadsSenha" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="CadsSenha" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="buttonExibirCad" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cbFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbSuperior" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="boxFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="boxSuperior" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="45" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -145,9 +145,9 @@
         <Property name="text" type="java.lang.String" value="Nome de Usu&#xe1;rio"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfCadUser">
+    <Component class="javax.swing.JTextField" name="CadUser">
     </Component>
-    <Component class="javax.swing.JTextField" name="tfCadEmail">
+    <Component class="javax.swing.JTextField" name="CadEmail">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -159,24 +159,24 @@
         <Property name="text" type="java.lang.String" value="senha"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JPasswordField" name="pfCadsSenha">
+    <Component class="javax.swing.JPasswordField" name="CadsSenha">
     </Component>
     <Component class="javax.swing.JButton" name="buttonExibirCad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Exibir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="cbFuncionario">
+    <Component class="javax.swing.JCheckBox" name="boxFuncionario">
       <Properties>
         <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="cbSuperior">
+    <Component class="javax.swing.JCheckBox" name="boxSuperior">
       <Properties>
         <Property name="text" type="java.lang.String" value="Superior"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbSuperiorActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boxSuperiorActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

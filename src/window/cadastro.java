@@ -31,14 +31,14 @@ public class cadastro extends javax.swing.JFrame {
         buttonEndCad = new javax.swing.JButton();
         ButtonVoltarCad = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        tfCadUser = new javax.swing.JTextField();
-        tfCadEmail = new javax.swing.JTextField();
+        CadUser = new javax.swing.JTextField();
+        CadEmail = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        pfCadsSenha = new javax.swing.JPasswordField();
+        CadsSenha = new javax.swing.JPasswordField();
         buttonExibirCad = new javax.swing.JButton();
-        cbFuncionario = new javax.swing.JCheckBox();
-        cbSuperior = new javax.swing.JCheckBox();
+        boxFuncionario = new javax.swing.JCheckBox();
+        boxSuperior = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,12 +83,12 @@ public class cadastro extends javax.swing.JFrame {
 
         buttonExibirCad.setText("Exibir");
 
-        cbFuncionario.setText("Funcionário");
+        boxFuncionario.setText("Funcionário");
 
-        cbSuperior.setText("Superior");
-        cbSuperior.addActionListener(new java.awt.event.ActionListener() {
+        boxSuperior.setText("Superior");
+        boxSuperior.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbSuperiorActionPerformed(evt);
+                boxSuperiorActionPerformed(evt);
             }
         });
 
@@ -100,19 +100,19 @@ public class cadastro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pfCadsSenha)
+                    .addComponent(CadsSenha)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfCadEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                    .addComponent(CadEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfCadUser))
+                    .addComponent(CadUser))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(buttonExibirCad)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cbFuncionario)
+                    .addComponent(boxFuncionario)
                     .addComponent(ButtonVoltarCad, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -121,7 +121,7 @@ public class cadastro extends javax.swing.JFrame {
                         .addGap(16, 16, 16))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
-                        .addComponent(cbSuperior)
+                        .addComponent(boxSuperior)
                         .addContainerGap(76, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -131,21 +131,21 @@ public class cadastro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfCadUser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CadUser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfCadEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CadEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pfCadsSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CadsSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonExibirCad))
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbFuncionario)
-                    .addComponent(cbSuperior))
+                    .addComponent(boxFuncionario)
+                    .addComponent(boxSuperior))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonEndCad, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -164,9 +164,9 @@ public class cadastro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ButtonVoltarCadActionPerformed
 
-    private void cbSuperiorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbSuperiorActionPerformed
+    private void boxSuperiorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxSuperiorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cbSuperiorActionPerformed
+    }//GEN-LAST:event_boxSuperiorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,17 +205,17 @@ public class cadastro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonVoltarCad;
+    private javax.swing.JTextField CadEmail;
+    private javax.swing.JTextField CadUser;
+    private javax.swing.JPasswordField CadsSenha;
+    private javax.swing.JCheckBox boxFuncionario;
+    private javax.swing.JCheckBox boxSuperior;
     private javax.swing.JButton buttonEndCad;
     private javax.swing.JButton buttonExibirCad;
-    private javax.swing.JCheckBox cbFuncionario;
-    private javax.swing.JCheckBox cbSuperior;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField pfCadsSenha;
-    private javax.swing.JTextField tfCadEmail;
-    private javax.swing.JTextField tfCadUser;
     // End of variables declaration//GEN-END:variables
 }

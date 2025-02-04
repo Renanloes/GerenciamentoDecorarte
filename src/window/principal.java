@@ -30,9 +30,9 @@ public class principal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         TableAlugueis = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
-        mbEstoque = new javax.swing.JMenu();
-        mbAgenda = new javax.swing.JMenu();
-        mbAlugueis = new javax.swing.JMenu();
+        Estoque = new javax.swing.JMenu();
+        Agenda = new javax.swing.JMenu();
+        Aluguel = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -51,14 +51,14 @@ public class principal extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(TableAlugueis);
 
-        mbEstoque.setText("ESTOQUE");
-        jMenuBar1.add(mbEstoque);
+        Estoque.setText("ESTOQUE");
+        jMenuBar1.add(Estoque);
 
-        mbAgenda.setText("AGENDA");
-        jMenuBar1.add(mbAgenda);
+        Agenda.setText("AGENDA");
+        jMenuBar1.add(Agenda);
 
-        mbAlugueis.setText("ALUGUEIS");
-        jMenuBar1.add(mbAlugueis);
+        Aluguel.setText("ALUGUEL");
+        jMenuBar1.add(Aluguel);
 
         setJMenuBar(jMenuBar1);
 
@@ -67,15 +67,14 @@ public class principal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(542, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(345, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 552, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -118,12 +117,12 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Agenda;
+    private javax.swing.JMenu Aluguel;
+    private javax.swing.JMenu Estoque;
     private javax.swing.JTable TableAlugueis;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JMenu mbAgenda;
-    private javax.swing.JMenu mbAlugueis;
-    private javax.swing.JMenu mbEstoque;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,10 +32,10 @@ public class login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        tfUserLogin = new javax.swing.JTextField();
+        UserLogin = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        tdSenhaLogin = new javax.swing.JTextField();
-        buttonExibirLogin = new javax.swing.JButton();
+        buttonExibir = new javax.swing.JButton();
+        SenhaLogin = new javax.swing.JPasswordField();
 
         jLabel2.setText("jLabel2");
 
@@ -73,21 +73,15 @@ public class login extends javax.swing.JFrame {
 
         jLabel3.setText("Usuario");
 
-        tfUserLogin.addActionListener(new java.awt.event.ActionListener() {
+        UserLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfUserLoginActionPerformed(evt);
+                UserLoginActionPerformed(evt);
             }
         });
 
         jLabel4.setText("Senha");
 
-        tdSenhaLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tdSenhaLoginActionPerformed(evt);
-            }
-        });
-
-        buttonExibirLogin.setText("Exibir");
+        buttonExibir.setText("Exibir");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,12 +97,12 @@ public class login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tdSenhaLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfUserLogin))
+                    .addComponent(UserLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
+                    .addComponent(SenhaLogin))
                 .addGap(18, 18, 18)
-                .addComponent(buttonExibirLogin)
+                .addComponent(buttonExibir)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -118,13 +112,13 @@ public class login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfUserLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(UserLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tdSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonExibirLogin))
+                    .addComponent(buttonExibir)
+                    .addComponent(SenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonCadUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -139,13 +133,9 @@ public class login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonCadUsuarioActionPerformed
 
-    private void tfUserLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfUserLoginActionPerformed
+    private void UserLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UserLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfUserLoginActionPerformed
-
-    private void tdSenhaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tdSenhaLoginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tdSenhaLoginActionPerformed
+    }//GEN-LAST:event_UserLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,15 +173,15 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField SenhaLogin;
+    private javax.swing.JTextField UserLogin;
     private javax.swing.JButton buttonCadUsuario;
     private javax.swing.JButton buttonEntrar;
-    private javax.swing.JButton buttonExibirLogin;
+    private javax.swing.JButton buttonExibir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField tdSenhaLogin;
-    private javax.swing.JTextField tfUserLogin;
     // End of variables declaration//GEN-END:variables
 }
