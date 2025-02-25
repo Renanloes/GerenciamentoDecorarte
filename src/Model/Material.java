@@ -4,7 +4,7 @@ public class Material {
 
     
 
-    public Material(String id, String categoria, int quantidade, String descricao){
+    public Material(String id, String categoria, int quantidade, double valor, String descricao){
     }   
        
     private String id;
@@ -43,8 +43,8 @@ public class Material {
         return valor;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setValor(double valor) {
+        this.valor = (int) valor;
     }
 
     public String getDescricao() {

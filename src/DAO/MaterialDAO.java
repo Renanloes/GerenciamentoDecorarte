@@ -35,28 +35,32 @@ public class MaterialDAO {
         }    
     }
     
-    public List<Material> listarMaterial(String id, String categoria, int quantidade, String descricao) throws SQLException{
+    //Listar Material
+    public List<Material> listarMaterial(String id, String categoria, int quantidade, double valor, String descricao) throws SQLException{
         List<Material> materiais = new ArrayList<>();
-        String query = "SELECT * FROM materiais WHERE id LIKE ? AND categoria LIKE ? AND quantidade LIKE ? AND descricao LIKE ?";
+        String query = "SELECT * FROM materiais WHERE id LIKE ? AND categoria LIKE ? AND quantidade = ? AND descricao LIKE ?";
         
         try(Connection conexao = ConexaoBanco.conectar();
             PreparedStatement ps = conexao.prepareStatement(query)){
             
             ps.setString(1, "%" + id + "%");
             ps.setString(2, "%" + categoria + "%");
-            ps.setString(3, "%" + quantidade + "%");
+            ps.setInt(3, quantidade);
             ps.setString(4, "%" + descricao + "%");
             
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
-                Material material = new Material (id, categoria, quantidade, descricao);
+                Material material = new Material (id, categoria, quantidade, valor, descricao);
                 material.setId(rs.getString("id"));
                 material.setCategoria(rs.getString("categoria"));
                 material.setQuantidade(rs.getInt("quantidade"));
+                material.setValor(rs.getDouble("valor"));
                 material.setDescricao(rs.getString("descricao"));
+                
+                materiais.add(material);
             }
         }
         
-        return null;
+        return materiais;
     }
 }
