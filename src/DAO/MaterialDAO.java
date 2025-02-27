@@ -35,6 +35,7 @@ public class MaterialDAO {
         }    
     }
     
+    
     //Listar Material
     public List<Material> listarMaterial(String id, String categoria, int quantidade, double valor, String descricao) throws SQLException{
         List<Material> materiais = new ArrayList<>();
