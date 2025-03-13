@@ -17,6 +17,7 @@ public class MaterialDAO {
             
              ps.setInt(1, id);
              ps.executeUpdate();
+             
         }
     }
     
