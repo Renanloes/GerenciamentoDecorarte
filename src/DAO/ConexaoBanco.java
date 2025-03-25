@@ -29,6 +29,7 @@ public class ConexaoBanco {
                 conexao.close();
                 System.out.println("Conexão fechada com sucesso.");
             }
+            
         }catch (SQLException e){
             System.out.println("Erro ao fechar conexao :" + e.getMessage());
         }

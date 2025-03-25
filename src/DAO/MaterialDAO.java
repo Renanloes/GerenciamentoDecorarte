@@ -1,7 +1,7 @@
 package DAO;
 
 import DAO.ConexaoBanco;
-import Model.Material;
+ import Model.Material;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
