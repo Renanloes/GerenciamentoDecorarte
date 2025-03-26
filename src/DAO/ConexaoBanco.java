@@ -23,6 +23,7 @@ public class ConexaoBanco {
         }
     }
     
+    
     public static void fecharConexao(Connection conexao){
         try{
             if(conexao != null){
